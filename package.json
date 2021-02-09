@@ -1,0 +1,28 @@
+{
+  "name": "means-ones",
+  "version": "1.0.0",
+  "description": "ones for means tech.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^11.2.3",
+    "electron-builder": "^22.9.1",
+    "release-it": "^14.3.0"
+  },
+  "build": {
+    "appId": "cn.ones.means",
+    "mac": {
+      "target": "dmg"
+    },
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
